@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>跳转</title>
+</head>
+<body>
+	<div></div><div id="say">还有<span></span>秒跳转....</div>
+	<!-- console.log(location.href);//当前页面的网址
+	alert(location.href); //弹出窗口显示网址-->
+	<script>
+		//用来获取特定参数名的参数值
+		function GetQueryString(name){
+		     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		     var r = encodeURI(window.location.search).substr(1).match(reg);
+		     if(r!=null)return  unescape(r[2]); return null;
+		}
+		// 调用方法
+		var sayDiv = document.getElementById('say');
+		var sayTime = sayDiv.getElementsByTagName('span')[0];
+		var setTime = GetQueryString("setTime");
+		var gotoURL = GetQueryString("gotoURL");
+		var say = decodeURI(GetQueryString("say"));
+		
+		//计时器
+		//setTimeout(function(){
+		//	location.href = gotoURL;
+		//}, setTime * 1000);
+		sayTime.innerHTML = setTime;
+		sayDiv.previousSibling.innerHTML = say;
+		
+		//定时器
+		var timer = setInterval(function(){
+			sayTime.innerHTML = --setTime;
+			if(setTime <= 1){
+				//清除计时器
+				clearInterval(timer);
+				location.href = gotoURL;
+			}
+		}, 1000);
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body{
+			font-family: "sans-serif","Î¢ÈíÑÅºÚ";
+			font-size: 14px;
+		}
+		.big{
+			font-size: 20px;
+			font-weight: bold;
+			margin: 20px 10px;
+		}
+		.book-img{
+			float: left;
+			display: inline-block;
+			width: 30.6%;
+		}
+		.book-img img{
+			width: 80%;
+			margin-top: 40px;
+			margin-left: 40px;
+		}
+		div.content{
+			margin-top: 40px;
+			width: 40%;
+			display: inline-block;
+			font-size: 16px;
+
+		}
+		p.book-name{
+			font-weight: bold;
+			color: #666666;
+		}
+		p.book-author{
+			font-weight: lighter;
+			font-size: 12px;
+		}
+		span.book-no{
+			display: inline-block;
+			color: #666;
+			font-size: 16px;
+		}
+		p.book-intro{
+			color: #666666;
+			font-size: 15px;
+		}
+		span.author{
+			color: blue;
+		}
+		div.introduce{
+			height: 25px;
+			border-bottom: 2px solid #e4393c;
+		}
+		div.introduce h4{
+			color: #fff;
+			height: 25px;
+			line-height: 25px;
+			padding-left: 20px;
+			padding-top: 2px;
+			font-size: 16px;
+			background: url(../images/item_sprite.jpg) no-repeat  0 -13px;
+		}
+		.submit-msg{
+			padding: 10px 15px;
+			margin-top: 10px;
+			border-radius: 5px;
+			background:#5bcfdf ;
+			font-weight: bold;
+			color: #fff;
+		}
+		a{
+			text-decoration: none;
+		}

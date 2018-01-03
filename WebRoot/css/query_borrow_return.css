@@ -1,0 +1,147 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		header,main{
+			width: 100%;
+		}
+		header img{
+			width: 76.47%;
+			margin: 0 auto;
+		}
+		body{
+			font-size: 14px;
+			font-family: "sans-serif","Î¢ÈíÑÅºÚ";
+			text-align: center;
+		}
+		a{
+			text-decoration:none;
+			color:inherit;
+		}
+		input:focus{
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		}
+		form input[type="text"]{
+			width: 150px;
+			height: 30px;
+			padding-left: 10px;
+		}
+		input[type="submit"]{
+			padding: 10px 15px;
+			margin-top: 10px;
+			border-radius: 5px;
+			background:#5bcfdf ;
+			font-weight: bold;
+			color: #fff;
+			border-style:none;
+			cursor: pointer;
+			font-size: 14px;
+		}
+		.big{
+			font-size: 16px;
+			font-weight: 500;
+		}
+		nav {
+			width: 76.47%;
+			height: 50px;
+			margin: 0 auto;
+			background: -webkit-linear-gradient(top,#fff,rgba(0,0,0,0.2));
+			box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+			box-sizing: border-box;
+			padding-left: 50px;
+		}
+		/*nav ul{
+			display: table;
+		}*/
+		nav ul li{
+			display: block;
+			float: left;
+			position: relative;
+		}
+		nav ul li a{
+			display: inline-block;
+			padding: 10px 15px;
+			line-height: 30px;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		nav .exit{
+			float: right;
+			padding-right: 30px;
+			line-height: 50px;
+			color: #999;
+		}
+		nav ul li:hover{
+			background: rgba(0,0,0,0.5);
+			-webkit-transition:background .5s linear 0s;
+			color: #fff;
+			border-radius: 5px;
+		}
+		nav ul li .second-ul{
+			display: none;
+
+		}
+		nav ul li:hover .second-ul{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50px;
+			z-index: 99;
+		}
+		nav ul li .second-ul>li{
+			display: block;
+			background: rgba(0,0,0,0.8);
+			border-bottom:1px solid #fff;
+			clear: both;
+		}
+		
+		nav ul li .second-ul>li>a{
+			display: inline-block;
+			padding: 5px 15px;
+			color: #fff;
+		}
+		nav ul li .second-ul>li>a:hover{
+			color: #fff;
+		}
+		nav .exit>a:nth-child(1):hover,
+		nav .exit>a:nth-child(2):hover{
+			color:#000;
+			border-bottom:1px solid #000;
+			-webkit-transition:color .5s linear 0s;
+		}
+		main .container{
+			width:76.47%;
+			margin: 0 auto;
+			height: 500px;
+			/*border: 1px solid #000;*/
+			position: relative;
+
+		}
+		main .container table{
+			width: 400px;
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border:1px solid #ccc;
+			text-align:center;
+		}
+	     table.table-striped > tbody> tr:nth-child(odd)>td,
+		 table.table-striped > tbody> tr:nth-child(odd)>th{
+			background:#f5f5f5;
+		}
+		table.table-striped > tbody> tr>th{
+			border-bottom:2px solid #ccc;
+		}
+		table.table-striped > tbody> tr>td{
+			border-top:2px solid #ccc;
+			
+		}
+		.container .logo{
+	 	 	width: 200px;
+	 	 	height: 200px;
+	 	 	background: url(./images/xiaohui.jpg) no-repeat center center; 
+	 	 	opacity: 0.2;
+	 	 	position: absolute;
+	 	 	top: 150px;
+	 	 	left: 400px;
+	 	 }

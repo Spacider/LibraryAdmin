@@ -1,0 +1,84 @@
+	*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-size: 14px;
+			font-family: "sans-serif","Î¢ÈíÑÅºÚ";
+			/*text-align: center;*/
+		
+		}
+		a{
+			text-decoration: none;
+		}
+		header,main{
+			width: 100%;
+		}
+		header img{
+			width: 76.47%;
+			margin: 0 auto;
+		}
+		main fieldset{
+			width: 500px;
+			height: 350px;
+			border: 1px solid #ccc;
+			margin: 0 auto;
+			margin-top: 100px;
+		}
+
+		form{
+			margin-top: 20px;
+			margin-left: 20px;
+		}
+		fieldset label{
+			font-size: 15px;
+			font-weight: bold;
+			text-align:right;
+		}
+		input{
+			border-style: none;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			margin: 5px 0;
+		}
+		input[type="text"],
+		input[type="password"]{
+			padding-left: 10px;
+			width: 90%;
+			height: 30px;
+		}
+		input:focus{
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		}
+		input[type="submit"],.register{
+			padding: 10px 15px;
+			margin-top: 10px;
+			border-radius: 5px;
+			background:#5bcfdf ;
+			font-weight: bold;
+			color: #fff;
+		}
+		.register{
+			display: inline-block;
+
+		}
+		input[type="submit"]:hover,.register:hover{
+			background: #5bc0de;
+			cursor: pointer;
+
+		}
+		main .container{
+			width:76.47%;
+			margin: 0 auto;
+			/*height: 500px;*/
+			/*border: 1px solid #000;*/
+		}
+		 .container .logo{
+	 	 	width: 200px;
+	 	 	height: 200px;
+	 	 	background: url(../images/xiaohui.jpg) no-repeat center center; 
+	 	 	opacity: 0.1;
+	 	 	position: absolute;
+	 	 	top: 150px;
+	 	 	left: 550px;
+	 	 }
